@@ -1,0 +1,245 @@
+/*VARIABLES*/
+:root {--couleurPrimaire: #fc2abf;
+        --couleurSecondaire: #1feaff;
+        --couleurTertiaire: #34fe1c;}
+
+
+/*ATTRIBUTS*/
+
+header{color: var(--couleurPrimaire);
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 40px;
+    font-family: 'dreamorphans', 'Elephant', sans-serif;
+    background-color: black;
+    }
+    
+h1{margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    }
+
+h2{
+    padding-top: 30px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+h3 {font-family: 'dreamorphans', 'Elephant',  sans-serif;
+    color: var(--couleurTertiaire);
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+h4{font-family: 'dreamorphans', 'Elephant', sans-serif;
+    color: var(--couleurTertiaire);
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;}
+
+body{margin: 0;
+    font-family: 'revonza', 'Georgia', sans-serif;
+}
+
+a{text-decoration: none;
+    color: var(--couleurPrimaire);}
+
+nav{text-align: center;
+    padding:20px;}
+
+ul{display: inline;
+    color:black;
+    font-size: 1.5em;
+    }
+
+li{list-style-type: none;
+    display: inline;
+    margin:10px;
+    }
+
+li :hover{font-weight: bold;}
+
+p{
+    margin-top: 15px;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+p a:hover{font-weight: bold; color:var(--couleurSecondaire)}
+
+*, ::before, ::after{margin:0;
+                    padding:0;
+                    box-sizing:border-box;
+                }
+
+footer{padding:10px;
+        margin:0px;
+        background: black;
+        width:100%;
+        color: var(--couleurPrimaire);
+        display: flex;
+        display:inline-flex ;
+        justify-content: center;
+}
+
+
+/*CLASSES*/
+
+.contener {width: 80%;
+    align-items: center;
+    margin:auto;
+}
+
+.separator {width: 200px;
+        height: 1.5px;
+        margin: 30 px auto;
+        display: inline-table;
+        justify-content: center;
+        
+        background-color: var(--couleurTertiaire);
+    }
+
+.Logos {position: absolute;
+    top: 10px;
+    left:10px;
+}
+
+.intro{font-weight: bold;
+        
+        text-align: center;}
+
+.jeu{display: block;
+    justify-content: center;
+    width: 100%;
+}
+
+.jeu img{max-width: 70%;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+}
+
+.jeu figcaption{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+}
+
+.container{
+    max-width: 800px;
+    margin:0 auto;
+    padding:30px;  
+}
+
+.slider img{
+    max-width:100%;
+    display:none;
+}
+
+img.active{
+    display:block;
+    animation: fade 0,8s;
+}
+
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cont-btn{
+    width: 100%;
+    height:auto;
+    border: 1px solid #000;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    display:flex;
+    justify-content: center;
+}
+
+.btn-nav{
+    font-size: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.description{text-align: center;}
+
+.création {text-align:right;
+    margin-right: 40px;
+    margin-left: 200px ;    
+}
+
+.copyright {text-align:left;
+    margin-left: 100px;
+    margin-right: 175px; 
+}
+
+.pied {
+    display:flex;
+    justify-content: center;}
+
+* {box-sizing: border-box;}
+
+
+/*ID*/
+
+#contact1{
+    max-width: 100%;
+    border: 2px #1feaff solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+   justify-content: center;   
+}
+
+#contact2{border: 2px #1feaff solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+   justify-content: center;  
+}
+
+#contact3{border: 2px #1feaff solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+   justify-content: center;  
+}
+
+
+
+/*POLICES*/
+@font-face {
+    font-family: 'dreamorphans';
+    src: url(../src/dreamorphans.otf) format(truetype);
+}
+
+@font-face{   
+    font-family: 'revonza';
+    src: url(../src/revonza.ttf) format(truetype);
+}
+
+
+/*MEDIA*/
+
+@media all and (max-width:1000p){
+.container{min-width: auto; height: auto;}
+h3{width:70%;}
+h4{width:70%;}
+}
+
+
